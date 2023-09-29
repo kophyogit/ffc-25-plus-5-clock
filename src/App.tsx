@@ -54,7 +54,7 @@ function App() {
       timerRunning: false,
     })
   };
-  const startStop = (displayState: DisplayState) => {
+  const startStop = () => {
     setDisplayState((prev) => ({
       ...prev,
       timerRunning: !prev.timerRunning,

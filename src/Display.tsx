@@ -21,7 +21,7 @@ const Display: React.FC<DisplayProps> = ({
                 <button id="start_stop" onClick={() => startStop(displayState)}>
                     {displayState.timerRunning ? <FaPause /> : <FaPlay />}
                 </button>
-                <button id="reset">
+                <button id="reset" onClick={() => reset()}>
                     <FaUndo />
                     </button>
                     </div>
